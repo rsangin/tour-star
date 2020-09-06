@@ -1,3 +1,3 @@
-<app-search-bar></app-search-bar>
+<app-search-bar (searched)="searchTour($event)"></app-search-bar>
 <app-slider-show></app-slider-show>
-<app-tours></app-tours>
+<app-tours [tours]="tours"></app-tours>

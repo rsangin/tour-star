@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { TourService } from './services/tour.service';
+import { Tour } from '../tours/models/tour';
 
 @Component({
   selector: 'app-home',
@@ -6,10 +8,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  public tours: Tour[];
 
-  constructor() { }
+  constructor(private service: TourService) { }
 
-  ngOnInit(): void {
+  async ngOnInit() {
+    this.searchTour('تهران');
   }
 
+  public async searchTour(city: string) {
+    this.tours = await this.service.getTours(city);
+  }
 }

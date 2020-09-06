@@ -1,0 +1,19 @@
+.tour-card {
+  width: 334px;
+  height: 400px;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid rgb(218, 218, 218);
+}
+
+.tour-card>img {
+  width: 100%;
+  height: 250px;
+}
+
+.price-tag {
+  background: #516B39;
+  color: white;
+  padding: 5px;
+}

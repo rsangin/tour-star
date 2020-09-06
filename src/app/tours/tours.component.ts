@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Tour } from './models/tour';
 
 @Component({
   selector: 'app-tours',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tours.component.scss']
 })
 export class ToursComponent implements OnInit {
+  @Input()
+  public tours: Tour[] = [];
 
   constructor() { }
 
