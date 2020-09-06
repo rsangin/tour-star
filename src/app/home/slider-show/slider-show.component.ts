@@ -10,7 +10,7 @@ export class SliderShowComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    setInterval(() => this.changeImage(), 2000);
+    setInterval(() => this.changeImage(), 10000);
   }
 
   private changeImage() {
