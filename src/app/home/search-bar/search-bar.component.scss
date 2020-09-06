@@ -1,0 +1,17 @@
+$height: 30px;
+
+.search-wrapper {
+  text-align: center;
+  background: #627077;
+  padding: 10px 0;
+}
+
+.search-input {
+  width: 400px;
+  height: $height;
+  line-height: $height;
+  border: 1px solid rgb(218, 218, 218);
+  border-radius: 15px;
+  padding: 0 10px;
+  outline: none;
+}
