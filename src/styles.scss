@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: IranSans;
+  src: url("./assets/fonts/IRANSansWeb.woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Yekan;
+  src: url("./assets/fonts/yekan.eot");
+  src: url("./assets/fonts/yekan.eot?#iefix") format("embedded-opentype"),
+    url("./assets/fonts/yekan.woff") format("woff"),
+    url("./assets/fonts/yekan.ttf") format("truetype");
+  font-weight: normal;
+  unicode-range: U+30-39;
+}
+
+@font-face {
+  font-family: Nastaligh;
+  src: url("./assets/fonts/Far_Nastaliq.ttf");
+  font-weight: normal;
+}
+
+body {
+  margin: 0;
+  direction: rtl;
+}
+
+* {
+  font-family: Yekan, IranSans, Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}

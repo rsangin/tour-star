@@ -1,0 +1,33 @@
+$height: 40px;
+$color: #E4E3DF;
+$border: 1px solid $color;
+
+.site-name {
+  font-family: Nastaligh, Arial, Helvetica, sans-serif;
+  color: #F78577;
+  font-size: 38px;
+  padding: 0 10px;
+  float: right;
+}
+
+.menu {
+  height: $height;
+  line-height: $height;
+  background: #283E49;
+
+  .menu-item {
+    height: $height;
+    line-height: $height;
+    display: inline-block;
+    margin: 0 5px;
+    color: $color;
+    border-left: $border;
+    border-right: $border;
+    padding: 0 10px;
+
+    &:hover {
+      background: $color;
+      color: black;
+    }
+  }
+}
